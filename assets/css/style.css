@@ -168,7 +168,7 @@ html{
 #slider{
     margin-top: 46px;
     padding-top: 50%;
-    background: url(/w3_band/assets/img/chicago.jpg) top center/ cover no-repeat;
+    background: url(../img/chicago.jpg) top center/ cover no-repeat;
     position: relative;
 }
 #slider .text-content{
@@ -385,7 +385,7 @@ html{
 }
 .map-section{
     padding-top: 56%;
-    background: url('/w3_band/assets/img/map.jpg') top center / cover no-repeat;
+    background: url('../img/map.jpg') top center / cover no-repeat;
     filter: grayscale(50%);
 }
 
