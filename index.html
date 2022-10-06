@@ -7,7 +7,7 @@
     <title>Band demo</title>
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/font/themify-icons-font/themify-icons/themify-icons.css">
-
+    <link rel="stylesheet" href="./assets/css/responsive.css">
 </head>
 <body>
     <div id="main">
@@ -35,6 +35,9 @@
             <div id="search-btn">
                 <i class="search-icon ti-search"></i>
             </div>
+            <div id="mobie-menu" class="mobie-menu-btn">
+                <i class="menu-icon ti-menu"></i>
+            </div>
             <!--End search-->
         </div>
 
@@ -52,15 +55,15 @@
                 <p class="section-sub-heading">We love music</p>
                 <p class="about-text">We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                 <div class="member-list">
-                    <div class="text-center col col-three">
+                    <div class="text-center col col-three mt-32 s-col-full">
                         <p class="member-name">Name</p>
                         <img src="./assets/img/bandmember (1).jpg" alt="member-img" class="member-img"></img>
                     </div>
-                    <div class="text-center col col-three">
+                    <div class="text-center col col-three mt-32 s-col-full">
                         <p class="member-name">Name</p>
                         <img src="./assets/img/bandmember (1).jpg" alt="member-img" class="member-img"></img>
                     </div>
-                    <div class="text-center col col-three">
+                    <div class="text-center col col-three mt-32 s-col-full">
                         <p class="member-name">Name</p>
                         <img src="./assets/img/bandmember (1).jpg" alt="member-img" class="member-img"></img>
                     </div>
@@ -81,31 +84,31 @@
                     </ul>
                     <!-- Begin: place-->
                     <div class="place-lists row">
-                        <div class="col col-three">
+                        <div class="col col-three mt-16 s-col-full">
                             <img src="./assets/img/place/place-1.jpg" alt="New York" class="place-img">
                             <div class="place-body">
                                 <h3 class="place-title">New York</h3>
                                 <p class="place-time">Fri 27 Nov 2016</p>
                                 <p class="place-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                                <button class="btn js-buy-tickets">Buy Tickets</button>
+                                <button class="btn js-buy-tickets s-full-width">Buy Tickets</button>
                             </div>
                         </div>
-                        <div class="col col-three">
+                        <div class="col col-three mt-16 s-col-full">
                             <img src="./assets/img/place/place-2.jpg" alt="New York" class="place-img">
                             <div class="place-body">
                                 <h3 class="place-title">Paris</h3>
                                 <p class="place-time">Sat 28 Nov 2016</p>
                                 <p class="place-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                                <button class="btn js-buy-tickets">Buy Tickets</button>
+                                <button class="btn js-buy-tickets s-full-width">Buy Tickets</button>
                             </div>
                         </div>
-                        <div class="col col-three">
+                        <div class="col col-three mt-16 s-col-full">
                             <img src="./assets/img/place/place-3.jpg" alt="New York" class="place-img">
                             <div class="place-body">
                                 <h3 class="place-title">San Francisco</h3>
                                 <p class="place-time">Sun 29 Nov 2016</p>
                                 <p class="place-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                                <button class="btn js-buy-tickets">Buy Tickets</button>
+                                <button class="btn js-buy-tickets s-full-width">Buy Tickets</button>
                             </div>
                         </div>
                         <div class="clear"></div>
@@ -120,19 +123,19 @@
                 <h2 class="section-heading">CONTACT</h2>
                 <p class="section-sub-heading">Fan? Drop a note!</p>
                 <div class="row">
-                    <div class="col col-half">
+                    <div class="col col-half s-col-full contact-infor">
                         <p><i class="ti-location-pin"></i> Chicago, US</p>
                         <p><i class="ti-mobile"></i> Phone: +00 151515</p>
                         <p><i class="ti-email"></i> Email: mail@mail.com</p>
                     </div>
                     <!-- Begin: form -->
-                    <div class="col col-half contact-form">
+                    <div class="col col-half s-col-full contact-form">
                         <form action="">
                             <div class="row">
-                                <div class="col col-half">
+                                <div class="col col-half s-col-full mt-8">
                                     <input type="text" placeholder="Name" required name="" id=""class="form-control">
                                 </div>
-                                <div class="col col-half">
+                                <div class="col col-half s-col-full mt-8">
                                     <input type="email" placeholder="Email" name="" required id=""class="form-control">
                                 </div>
                             </div>
@@ -142,7 +145,7 @@
                                 </div>
                             </div>
                             <div class="text-right">
-                                <input class="btn" type="submit" value="SEND">
+                                <input class="btn s-full-width" type="submit" value="SEND">
                             </div>
                         </form>
                     </div>
@@ -221,6 +224,35 @@
             event.stopPropagation()
         })
         
+    </script>
+    <!-- mobie menu -->
+    <script>
+        var header = document.querySelector('#header');
+        var mobieMenu = document.querySelector('#mobie-menu');
+        var headerHeight = header.clientHeight;
+        var menuItems = document.querySelectorAll('#nav li a[href*="#"]');
+
+        mobieMenu.onclick = function(){
+            var isClose = header.clientHeight === headerHeight;
+            if(isClose){
+                header.style.height='auto';
+            }else{
+                header.style.height=null;
+            }
+        }
+
+        for(var menuItem of menuItems){
+
+            menuItem.onclick = function(event){
+                var isParentMenu = this.nextElementSibling && this.nextElementSibling.classList.contains('subnav');
+                if(isParentMenu){
+                    event.preventDefault();
+                }else{
+
+                    header.style.height=null;
+                }
+            }
+        }
     </script>
 </body>
 </html>

@@ -1,0 +1,79 @@
+/*Mobie*/
+@media (max-width:739px){
+    /*common class*/
+    .s-col-full,
+    .s-full-width{
+        width: 100% !important;
+    }
+    .mt-8{
+        margin-top: 8px;
+    }
+
+    /**/
+    #header{
+        overflow: hidden;/*hidden child that out size parent*/
+    }
+    #header #search-btn{
+        display: none;
+    }
+    #header .mobie-menu-btn{
+        display: block;
+
+    }
+    #nav{
+        display: block;
+    }
+    #nav> li{
+        display: block;
+    }
+    #nav:first-child{
+        display: inline-block;
+    }
+    #header #nav .subnav{
+        position: initial;
+        background-color: #000;
+
+    }
+    #nav .subnav a{
+        color: #fff;
+        padding: 0 41px;
+    }
+    .contact-form{
+        margin-top: 16px;
+    }
+    .social-list a{
+        font-size: 32px;
+        margin: 0 8px;
+    }
+    
+}
+/*Pc*/
+@media (min-width:1024px){
+    
+}
+/*Tablet*/
+@media (min-width:740px) and (max-width:1023px){
+    .contact-form .form-control{
+        padding: 12px;
+    }
+    .social-list a{
+        font-size: 42px;
+        margin: 0 8px;
+    }
+    .contact-infor{
+        font-size: 16px;
+        line-height: 1.8;
+    }
+
+}
+/*Tablet & Mobie*/
+@media (max-width:1023px){
+    .btn{
+        padding: 14px 16px;
+    }
+    .copyright a{
+        padding:13px 0;
+        display: inline-block;
+    }
+    
+}

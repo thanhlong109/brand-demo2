@@ -56,6 +56,12 @@ html{
 .mb-8{
     margin-bottom: 8px !important;
 }
+.mt-32{
+    margin-top: 32px !important;
+}
+.mb-32{
+    margin-bottom: 32px !important;
+}
 .btn{
     background-color: #000;
     color: #fff;
@@ -64,6 +70,7 @@ html{
     display: inline-block;
     margin-top: 16px;
     border: none;
+    text-align: center;
 }
 .btn:hover{
     background-color: #ccc;
@@ -150,20 +157,33 @@ html{
     padding: 0 12px;
     line-height: 38px;
 }
+#header .mobie-menu-btn,
 #header #search-btn{
    float:right;
    padding: 0 21px;
-   cursor: pointer;
+}
+#header .mobie-menu-btn{
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: none;
 }
 #header #search-btn:hover{
     background-color: #f44336;
+    cursor: pointer;
 }
-
+#header .mobie-menu-btn:hover{
+    background-color: #ccc;
+}
+#header .mobie-menu-btn:hover .menu-icon{
+    color: #000;
+}
+#header .menu-icon,
 #header .search-icon{
     color: #fff;
     font-size: 20px;
     line-height: 46px;
-    display: block;
+    
 }
 
 #slider{
@@ -189,14 +209,12 @@ html{
     font-size: 15px;
 }
 
-#content{
-
-}
 #content .content-section{
     width: 800px;
+    max-width: 100%;
     margin-left: auto;
     margin-right: auto;
-    padding: 64px 0;
+    padding: 64px 16px;
 }
 #content .section-heading{
     text-align: center;
@@ -217,7 +235,7 @@ html{
     line-height: 1.4;
 }
 #content .member-list{
-    margin-top: 48px;
+    margin-top: 16px;
 }
 
 #content .member-img{
@@ -265,7 +283,7 @@ html{
     margin-left: 16px;;
 }
 .place-lists{
-    margin-top: 32px;
+    margin-top: 16px;
     margin-bottom: 48px;
 }
 
